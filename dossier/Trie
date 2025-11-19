@@ -1,0 +1,30 @@
+import os
+import shutil
+
+
+def triefichier():
+    for files in os.listdir(r"C:\Users\jesse.richard\Desktop\git-hub\dossier"):
+        Nom_du_fichier = os.path.basename(files)
+        print(Nom_du_fichier)
+        extension = os.path.splitext(Nom_du_fichier)[1].lower()
+        # Extention = Nom_du_fichier.split(".")
+        # print(Extention[1])
+        if extension == ".pdf":
+            chemin_destination = os.path.join(r"C:\Users\jesse.richard\Desktop\git-hub\dossier\Documents", Nom_du_fichier)
+            shutil.move(files, chemin_destination)
+        if extension == ".jpg":
+            chemin_destination = os.path.join(r"C:\Users\jesse.richard\Desktop\git-hub\dossier\Images", Nom_du_fichier)
+            shutil.move(files, chemin_destination)
+        if extension == "mp3":
+            chemin_destination = os.path.join(r"C:\Users\jesse.richard\Desktop\git-hub\dossier\Musiques", Nom_du_fichier)
+            shutil.move(files, chemin_destination)
+        if extension == "mp4":
+            chemin_destination = os.path.join(r"C:\Users\jesse.richard\Desktop\git-hub\dossier\Videos", Nom_du_fichier)
+            shutil.move(files, chemin_destination)
+        if extension == ".png":
+            chemin_destination = os.path.join(r"C:\Users\jesse.richard\Desktop\git-hub\dossier\GImage", Nom_du_fichier)
+            shutil.move(files, chemin_destination)
+    
+
+
+triefichier()
