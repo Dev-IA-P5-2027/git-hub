@@ -1,0 +1,4 @@
+import lua_require
+
+print(lua_require)           # doit afficher le module
+print(dir(lua_require))      # doit contenir 'require'

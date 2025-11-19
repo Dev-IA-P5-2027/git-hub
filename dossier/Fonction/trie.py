@@ -1,6 +1,7 @@
 import os
 import shutil
 
+print("Salut")
 
 def triefichier():
     for files in os.listdir(r"C:\Users\jesse.richard\Desktop\git-hub\dossier"):
