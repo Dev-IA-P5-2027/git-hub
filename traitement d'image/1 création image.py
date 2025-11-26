@@ -69,12 +69,12 @@ def carré_violet2():
 carré_violet()
 carré_violet2()
 
-a = 0
-while a < 1000:
-    for x in range(40+a, 70+a):
-        for y in range(40+a, 70+a):
-            colo_pix(x, y, 255, 0, 255)
-a+=30
+# a = 0
+# while a < 1000:
+#     for x in range(40+a, 70+a):
+#         for y in range(40+a, 70+a):
+#             colo_pix(x, y, 255, 0, 255)
+# a+=30
 
 # x = 0
 # y = 0
